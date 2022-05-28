@@ -8,7 +8,7 @@ import certifi
 import math
 
 ca = certifi.where()
-cluster = MongoClient("mongodb+srv://yelpe_dev:yelpe_dev@yelpe.jilnd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",tlsCAFile=ca)
+cluster = MongoClient("",tlsCAFile=ca)
 
 db = cluster["yelpDB"]
 
