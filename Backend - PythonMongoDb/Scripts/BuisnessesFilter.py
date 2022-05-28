@@ -1,7 +1,7 @@
 import pymongo
 from pymongo import MongoClient
 
-cluster = MongoClient("mongodb+srv://yelpe_dev:yelpe_dev@yelpe.jilnd.mongodb.net/Yelpe?retryWrites=true&w=majority")
+cluster = MongoClient("")
 db = cluster["yelpDB"]
 businessCollection = db["businesses"]
 reviewCollection = db["newReviews"]
