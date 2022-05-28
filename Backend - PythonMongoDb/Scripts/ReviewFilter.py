@@ -5,7 +5,7 @@ import certifi
 from bson.json_util import dumps
 
 ca = certifi.where()
-online_cluster = MongoClient("mongodb+srv://yelpe_dev:yelpe_dev@yelpe.jilnd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",tlsCAFile=ca)
+online_cluster = MongoClient("",tlsCAFile=ca)
 online_db = online_cluster["yelpDB"]
 online_businessCollection = online_db["businesses"]
 
